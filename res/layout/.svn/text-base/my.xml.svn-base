@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/title_style"
+        android:gravity="center"
+        android:text="@string/setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/setting_photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo" />
+
+                <LinearLayout
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/setting_photo"
+                    android:orientation="vertical" >
+
+                    <LinearLayout style="@style/wrap_content" >
+
+                        <TextView
+                            style="@style/wrap_content"
+                            android:text="@string/setting_name"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/my_txt_size" />
+
+                        <TextView
+                            android:id="@+id/settting_name"
+                            style="@style/wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="李四"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/my_txt_size" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/wrap_content" >
+
+                        <TextView
+                            style="@style/wrap_content"
+                            android:text="@string/setting_count"
+                            android:textColor="@color/text_color2"
+                            android:textSize="@dimen/my_txt_size" />
+
+                        <TextView
+                            android:id="@+id/settting_count"
+                            style="@style/wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="15025355345"
+                            android:textColor="@color/text_color2"
+                            android:textSize="@dimen/my_txt_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_psd"
+                style="@style/my_re_style" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:text="@string/setting_change_psd"
+                    android:textSize="@dimen/my_txt_size" />
+
+                <ImageView
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_wallet"
+                style="@style/my_re_style" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:text="@string/setting_wallet"
+                    android:textSize="@dimen/my_txt_size" />
+
+                <ImageView
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/practice_price"
+                style="@style/my_re_style" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:text="@string/prictice_price"
+                    android:textSize="@dimen/my_txt_size" />
+
+                <ImageView
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_jiapei"
+                style="@style/my_re_style" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:text="@string/about_jiapei"
+                    android:textSize="@dimen/my_txt_size" />
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imge"
+                    android:text="@string/jiapei_edition"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imge"
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

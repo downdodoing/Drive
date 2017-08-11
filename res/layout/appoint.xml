@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title_back" >
+
+            <ImageView
+                android:id="@+id/appoint_back"
+                style="@style/back_bnt_style"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/appoint_list"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp" >
+
+                <RelativeLayout
+                    android:id="@+id/appoint_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/appoint_all"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/appoint_all_img"
+                        style="@style/appoint_title_style"
+                        android:layout_toRightOf="@+id/text1"
+                        android:src="@drawable/down_1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/appoint_new"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#c8c7cc" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/appoint_new"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/appoint_new_img"
+                        style="@style/appoint_title_style"
+                        android:layout_toRightOf="@+id/text2"
+                        android:src="@drawable/down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/has_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#c8c7cc" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/has_ok"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/has_ok_img"
+                        style="@style/appoint_title_style"
+                        android:layout_toRightOf="@+id/text3"
+                        android:src="@drawable/down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/has_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#c8c7cc" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/has_end"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/has_end_img"
+                        style="@style/appoint_title_style"
+                        android:layout_toRightOf="@+id/text4"
+                        android:src="@drawable/down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/has_reject"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#c8c7cc" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/has_reject"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/has_reject_img"
+                        style="@style/appoint_title_style"
+                        android:layout_toRightOf="@+id/text5"
+                        android:src="@drawable/down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c8c7cc" />
+        </LinearLayout>
+
+        <com.example.util.upgetmoredata.MyListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            android:listSelector="#ecf9ff" >
+        </com.example.util.upgetmoredata.MyListView>
+    </LinearLayout>
+
+    <include
+        style="@style/progressbar_style"
+        layout="@layout/progressbar" />
+
+</RelativeLayout>

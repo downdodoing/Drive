@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.util.circleimage.CircleImageView
+        android:id="@+id/appoint_list_item_imge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/photo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appoint_list_item_imge"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaner"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/leaner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王雪峰"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<modify-entry
+   name="androidannotations-3.0.1.jar"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/androidannotations-3.0.1.jar.svn-base"
+   name=".svn/prop-base/tempfile.tmp"/>
+<readonly
+   name=".svn/prop-base/androidannotations-3.0.1.jar.svn-base"/>
+<modify-entry
+   committed-rev="894"
+   committed-date="2016-08-27T07:10:46.351773Z"
+   name="androidannotations-3.0.1.jar"
+   last-author="dengbj"
+   uuid="41812146-ab14-484b-b3e4-cad4372585cb"/>
+<modify-wcprop
+   name="androidannotations-3.0.1.jar"
+   propname="svn:wc:ra_dav:version-url"
+   propval="/svn/DingDing/!svn/ver/894/JiaPei/APP/Coach/Android/trunk/compile-libs/androidannotations-3.0.1.jar"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="androidannotations-3.0.1.jar"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="1508"/>
+<cp-and-translate
+   dest="androidannotations-3.0.1.jar"
+   name=".svn/tmp/text-base/androidannotations-3.0.1.jar.svn-base"/>
+<mv
+   dest=".svn/text-base/androidannotations-3.0.1.jar.svn-base"
+   name=".svn/tmp/text-base/androidannotations-3.0.1.jar.svn-base"/>
+<readonly
+   name=".svn/text-base/androidannotations-3.0.1.jar.svn-base"/>
+<modify-entry
+   name="androidannotations-3.0.1.jar"
+   checksum="1abbbb9d8c5386dbee49fe75c0cd897e"/>
+<modify-entry
+   name="androidannotations-3.0.1.jar"
+   text-time="working"/>
+<modify-entry
+   name="androidannotations-3.0.1.jar"
+   working-size="working"/>
+<modify-entry
+   committed-rev="894"
+   committed-date="2016-08-27T07:10:46.351773Z"
+   name=""
+   last-author="dengbj"
+   uuid="41812146-ab14-484b-b3e4-cad4372585cb"/>
+<modify-wcprop
+   name=""
+   propname="svn:wc:ra_dav:version-url"
+   propval="/svn/DingDing/!svn/ver/894/JiaPei/APP/Coach/Android/trunk/compile-libs"/>

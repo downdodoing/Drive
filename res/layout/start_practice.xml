@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title_back" >
+
+            <ImageView
+                android:id="@+id/start_back"
+                style="@style/back_bnt_style" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="开始练车"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#77b5c4" />
+
+        <com.example.util.refresh.RefreshableView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refresh_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:background="@color/title_back" >
+
+                        <TextView
+                            android:id="@+id/time"
+                            style="@style/wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="00:00:00"
+                            android:textColor="#ffffff"
+                            android:textSize="50sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/practice_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp" >
+
+                                <TextView
+                                    style="@style/wrap_content"
+                                    android:text="@string/leaner_name"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/leaner_name"
+                                    style="@style/wrap_content"
+                                    android:text="王雪峰"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" >
+
+                                <LinearLayout
+                                    style="@style/wrap_content"
+                                    android:layout_marginTop="3dp" >
+
+                                    <TextView
+                                        style="@style/wrap_content"
+                                        android:text="@string/leaner_date"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/leaner_date"
+                                        style="@style/wrap_content"
+                                        android:text="2016-08-24"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="3dp" >
+
+                                    <TextView
+                                        style="@style/wrap_content"
+                                        android:text="@string/leaner_time"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/leaner_time"
+                                        style="@style/wrap_content"
+                                        android:text="06:00!18:00"
+                                        android:textColor="#f44336"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" >
+
+                                <LinearLayout
+                                    style="@style/wrap_content"
+                                    android:layout_marginTop="3dp" >
+
+                                    <TextView
+                                        style="@style/wrap_content"
+                                        android:text="@string/time_price"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/time_price_company"
+                                        style="@style/wrap_content"
+                                        android:text="80"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        style="@style/wrap_content"
+                                        android:text="元/学时"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="3dp" >
+
+                                    <TextView
+                                        style="@style/wrap_content"
+                                        android:text="@string/total_spent"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/total_spent"
+                                        style="@style/wrap_content"
+                                        android:text="1200"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/total_spent_company"
+                                        style="@style/wrap_content"
+                                        android:text="元"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="4dp"
+                            android:background="#c8c7cc" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_marginTop="20dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/sliderBnt_show"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:background="@drawable/slider_back1" >
+
+                                <com.example.util.sliderBnt.SliderBnt
+                                    android:id="@+id/sliderBnt"
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/slider_back" >
+                                </com.example.util.sliderBnt.SliderBnt>
+
+                                <TextView
+                                    android:id="@+id/sliderbnt_hint"
+                                    style="@style/wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/sliderbnt_hint" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/hint_show"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/slider_back1"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    style="@style/wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/hint_show" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/sliderBnt_show1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:background="@drawable/slider_back1"
+                                android:visibility="gone" >
+
+                                <com.example.util.sliderBnt.SliderBnt
+                                    android:id="@+id/sliderBnt1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/slider_back" >
+                                </com.example.util.sliderBnt.SliderBnt>
+
+                                <TextView
+                                    android:id="@+id/sliderbnt_hint1"
+                                    style="@style/wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/sliderbnt_hint1" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/hint_show1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/slider_back1"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/hint_text"
+                                    style="@style/wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/hint_show1" />
+                            </RelativeLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/hint_show2"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/background_white"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/hint_show2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.example.util.refresh.RefreshableView>
+    </LinearLayout>
+
+    <TextView
+        style="@style/wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/hint_show3" />
+
+    <include
+        style="@style/progressbar_style"
+        layout="@layout/progressbar" />
+
+</RelativeLayout>

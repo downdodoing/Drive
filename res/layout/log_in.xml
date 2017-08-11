@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c4c2c2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        style="@style/login_text"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:text="@string/count" />
+
+                    <EditText
+                        android:id="@+id/count"
+                        style="@style/login_edit"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edittext_back"
+                        android:hint="@string/hint_count"
+                        android:text="15025355345" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#c4c2c2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        style="@style/login_text"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:text="@string/psd" />
+
+                    <EditText
+                        android:id="@+id/psd"
+                        style="@style/login_edit"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edittext_back"
+                        android:hint="@string/hint_psd"
+                        android:inputType="textPassword"
+                        android:text="851117" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c4c2c2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginRight="10dp" >
+
+                <CheckBox
+                    android:id="@+id/check"
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:text="@string/auto_log_in" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/log_in_bnt"
+                style="@style/ok_bnt_style" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/log_in"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/ok_bnt_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/forget_psd"
+                style="@style/wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/forget_psd"
+                android:textColor="#385eeb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <include
+            style="@style/progressbar_style"
+            layout="@layout/progressbar" />
+    </RelativeLayout>
+
+</ScrollView>

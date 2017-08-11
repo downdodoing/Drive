@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_back" >
+
+        <ImageView
+            android:id="@+id/set_back"
+            style="@style/back_bnt_style" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting_change_psd"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_psd_height"
+        android:background="#ffffff" >
+
+        <TextView
+            style="@style/change_psd"
+            android:text="@string/change_psd_count" />
+
+        <EditText
+            android:id="@+id/change_psd_count"
+            style="@style/change_psd_edit"
+            android:hint="请输入账号" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_psd_height"
+        android:background="#ffffff" >
+
+        <TextView
+            style="@style/change_psd"
+            android:text="@string/initial_psd" />
+
+        <EditText
+            android:id="@+id/initial_psd"
+            style="@style/change_psd_edit"
+            android:hint="请输入原密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_psd_height"
+        android:background="#ffffff" >
+
+        <TextView
+            style="@style/change_psd"
+            android:text="@string/new_psd" />
+
+        <EditText
+            android:id="@+id/new_psd"
+            style="@style/change_psd_edit"
+            android:hint="请输入新密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_psd_height"
+        android:background="#ffffff" >
+
+        <TextView
+            style="@style/change_psd"
+            android:text="@string/confirm" />
+
+        <EditText
+            android:id="@+id/confirm"
+            style="@style/change_psd_edit"
+            android:hint="请输入新密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c7cc" />
+
+    <RelativeLayout
+        android:id="@+id/set_Ok_bnt"
+        style="@style/ok_bnt_style" >
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/OK"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ok_bnt_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

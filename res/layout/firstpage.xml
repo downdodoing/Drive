@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/title_style"
+        android:gravity="center"
+        android:text="@string/firstpage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_back" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="82dp"
+                    android:text=""
+                    android:textColor="@color/text_color1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/name"
+                    android:text=""
+                    android:textColor="@color/text_color2"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    style="@style/enter_img"
+                    android:src="@drawable/ic_back_2" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:id="@+id/appoint_appliction"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/application"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/appoint" />
+
+                        <LinearLayout
+                            style="@style/wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/application"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/wrap_content"
+                                android:text="@string/appoint_appliction"
+                                android:textColor="@color/text_color1"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                style="@style/wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/appoint_appliction_new"
+                                android:textColor="@color/text_color2"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="#c4c2c2" />
+
+                <RelativeLayout
+                    android:id="@+id/start_learn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        style="@style/wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/learn"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/startpractice" />
+
+                        <LinearLayout
+                            style="@style/wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/learn"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/wrap_content"
+                                android:text="@string/start_learn"
+                                android:textColor="@color/text_color1"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                style="@style/wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/record"
+                                android:textColor="@color/text_color2"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.example.util.circleimage.CircleImageView
+            android:id="@+id/circleImage_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/photo"
+            app:border_width="2dp" />
+    </RelativeLayout>
+
+    <com.example.util.upgetmoredata.MyListView
+        android:id="@+id/first_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:listSelector="@color/app_back" >
+    </com.example.util.upgetmoredata.MyListView>
+
+</LinearLayout>

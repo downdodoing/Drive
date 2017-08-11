@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#ffc8c8c8</color>
+    <color name="bottom_bar_line">#ffe5e5e5</color>
+    <color name="bottom_bar_bg">#fff8f8f8</color>
+    <color name="blue">#17B3ED</color>
+    <color name="im_text_color">#ff999999</color>
+    <color name="im_text_color1">#00a5bb</color>
+    <color name="app_back">#F2F2F5</color>
+    <color name="text_color1">#1F363C</color>
+    <color name="text_color2">#8e8e8e</color>
+    <color name="title_back">#0094b9</color>
+
+      <!-- 整个页面背景色灰色 -->
+    <color name="background_white">#F2F2F5</color>
+</resources>
